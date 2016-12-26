@@ -30,7 +30,6 @@ local screen = {
 }
 
 function _Do(_tab)
-  printFunction('超时')
   -- 判断是否传入的是正确内容
   local check_table
   check_table = function(t)
@@ -112,7 +111,6 @@ function _Do(_tab)
         for _key,_value in ipairs(_tab) do
           if screen.is_colors(_value.Color, _value.csim or _tab.csim) then
             table.insert(_States,_key)
-            printFunction(">>>>>>".._key)
             if _tab.Repeat then
               if os.time() - _value.RepeatTime >= _tab.Repeat.n then
                 _value.RepeatTime = os.time()
@@ -162,18 +160,18 @@ function _Do(_tab)
   end
 
 
-testtb ={ Name = '庭院-展开卷轴',
-  Color = {
-    {114,83,0x31467b},
-    {891,52,0x311910},
-    {1104,42,0xe95e29},
-    {1416,61,0x728dc4},
-    {1612,39,0x361e0d},
-  },
+testtb ={{ Name = '庭院-展开卷轴',
+  Color ={
+	{96,86,0x2e437b},
+	{848,48,0x311910},
+	{1106,42,0xed6729},
+	{1160,42,0x361d0d},
+},
   Run = (function()
-  touch.tap(219,578)
+  tap(305,987)
 end),
-}
+},sleep = 1000,
+csim = 75}
 
 
 

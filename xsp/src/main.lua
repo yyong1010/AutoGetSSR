@@ -31,9 +31,10 @@ function main()
         require "rabbit"
         require "demo"
         require "screen"
+				require "tbpara"
 
         --dogame()
-        _Do(testtb)
+        _Do(logintb)
 
 
 
