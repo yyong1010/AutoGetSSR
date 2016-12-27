@@ -143,7 +143,10 @@ function _Do(_tab)
             if _Handle.layer then _Do(_Handle.layer) end
             _now = os.time()
           end
-          if _break then break end
+          if _break then
+            printFunction("停止")
+            break
+          end
           if _Repeat then if _tab.Repeat.Run() then return end
           _Repeat=false
         end

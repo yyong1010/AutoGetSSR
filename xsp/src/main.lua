@@ -10,9 +10,6 @@
 ]]--
 
 function main()
-  print("hello")
-    --require "xxsc"
-    --_Do(yys)
   require "util"--加载工具
   require "SettingACheck"--加载全局设置
   init("0", 1)--初始化触摸操控脚本
@@ -32,9 +29,19 @@ function main()
         require "demo"
         require "screen"
 				require "tbpara"
+        require "account"
+
 
         --dogame()
+        --wFile("givemessr1@163.com----xbox3600\n","[public]account.txt")
+        --wFile("givemessr3@163.com----xbox3600\n","[public]account.txt")
+
+        while (_orderid < _totalnum + 1) do
         _Do(logintb)
+        _Do(changeAccttb)
+        _orderid = _orderid + 1
+        setOrderId(_orderid)
+        end
 
 
 

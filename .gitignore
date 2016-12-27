@@ -2,3 +2,7 @@
 *.xsp
 
 *.xspproj
+
+xsp/manifest.json
+
+xsp/manifest.json

@@ -256,11 +256,11 @@ end
 function zoomout()
   local x1, y1, x2, y2 = 1225, 100 , 325, 1000
   local step, x, y = 20, x1 , y1
-  
+
   touchDown(1,x2-50,y2+50)
   mSleep(30)
   touchDown(2, x, y)
-  
+
   local function move(from, to)
     if from > to then
       do
@@ -270,7 +270,7 @@ function zoomout()
       return step
     end
   end
-  
+
   while (math.abs(x-x2) >= step) or (math.abs(y-y2) >= step) do
     if math.abs(x-x2) >= step then x = x + move(x1,x2) end
     if math.abs(y-y2) >= step then y = y + move(y1,y2) end
@@ -279,10 +279,10 @@ function zoomout()
   end
   touchMove(2, x2, y2)
   mSleep(30)
-  
+
   touchUp(2, x2, y2)
   touchUp(1,x2-50,y2+50)
-  
+
   tap(math.random(1,5),math.random(1,5))
 end
 
@@ -313,29 +313,31 @@ function tapR(xp,yp)
   tap(x,y)
 end
 
-function wFile(content,fileName)
+function wFile(content,fileName,wtype)
+  local writeType = wtype or 'a'
   local fn = fileName or "[public]a.txt"
-  local f = assert(io.open(fn, 'a'))
+  local f = assert(io.open(fn, writeType))
   f:write(content)
   f:close()
 end
 
 function rFile(fileName)
-  local y = 1  
-  local f = io.open("[public]account.txt",'r');
+  local y = 1
+  local fn = fileName or "[public]a.txt"
+  local f = assert(io.open(fn,'r'));
 	local acctTb = {}
-  for line in f:lines() do      
+  for line in f:lines() do
 		acctTb[#acctTb +1]=line
-    y = y + 1  
-  end	
+    y = y + 1
+  end
   f:close()
 	return acctTb
 end
 
-function string:split(sep)  
-    local sep, fields = sep or "\t", {}  
-    local pattern = string.format("([^%s]+)", sep)  
-    self:gsub(pattern, function(c) fields[#fields+1] = c end)  
-    return fields  
-end  
+function string:split(sep)
+    local sep, fields = sep or "\t", {}
+    local pattern = string.format("([^%s]+)", sep)
+    self:gsub(pattern, function(c) fields[#fields+1] = c end)
+    return fields
+end
 
