@@ -48,7 +48,7 @@ function dogame()
       while (fightisover < 0) do
         --xf,yf = findMultiColorInRegionFuzzy(0xe1caa2,"6|0|0xd7c9a3,3|5|0xddcba3,3|3|0xddcba3,3|3|0xddcba3",90,565,237,1372,831) --战斗亮点颜色
         --xe,ye = findMultiColorInRegionFuzzy(0xffefc0,"7|0|0xffefc0,7|9|0xffefc0,1|9|0xffefc0", 90,565,237,1372,831)
-				xf,yf =findMultiColorInRegionFuzzy(0x2f0d00,"2|4|0xdbbc89,0|4|0xcbaa77,4|1|0x2f0d00", 85,565,237,1372,831) --等级框的颜色
+				xf,yf =findMultiColorInRegionFuzzy(0xbb9f77,"0|4|0x321806,1|6|0x382017,2|8|0x371f16,33|0|0xbba179,33|9|0x372116,33|16|0xa38765", 90, 0,0,1919,1079) --等级框的颜色
         printFunction("xf:"..xf.."yf:"..yf)
         if xf ~= -1 then
           printFunction("点战斗亮点")

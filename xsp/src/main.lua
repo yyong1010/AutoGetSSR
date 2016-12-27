@@ -13,40 +13,42 @@ function main()
   require "util"--加载工具
   require "SettingACheck"--加载全局设置
   init("0", 1)--初始化触摸操控脚本
-
-
+  
+  
   start,setting = showUI("ui.json")--显示UI并获取设置
-
+  
   if start == 0 or setting["BasicFunction"] == "" then
     printFunction("取消执行")
     lua_exit()--取消则退出
   end
-
+  
   if start == 1 then
-
-        require "dogame"
-        require "rabbit"
-        require "demo"
-        require "screen"
-				require "tbpara"
-        require "account"
-
-
-        --dogame()
-        --wFile("givemessr1@163.com----xbox3600\n","[public]account.txt")
-        --wFile("givemessr3@163.com----xbox3600\n","[public]account.txt")
-
-        while (_orderid < _totalnum + 1) do
-        _Do(logintb)
-        _Do(changeAccttb)
-        _orderid = _orderid + 1
-        setOrderId(_orderid)
-        end
-
-
-
+    
+    require "dogame"
+    require "rabbit"
+    require "demo"
+    require "screen"
+    require "tbpara"
+    require "account"
+    
+    
+    --dogame()
+    --wFile("givemessr1@163.com----xbox3600\n","[public]account.txt")
+    --wFile("givemessr3@163.com----xbox3600\n","[public]account.txt")
+    
+    while (_orderid < _totalnum + 1) do
+			printFunction("当前序号"..tostring(_orderid).."/".._totalnum)			
+      --_Do(logintb)
+      --dogame()
+      --_Do(changeAccttb)
+      _orderid = _orderid + 1
+      setOrderId(_orderid)
+    end
+    
+    
+    
   end
-
+  
 end
 
 -- lua异常捕捉

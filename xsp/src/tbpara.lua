@@ -28,6 +28,22 @@ logintb = {Name = "登入",
 end)
 },
 
+{Name = "2账号登陆界面(模拟器)",
+  Color = {
+	{716,399,0xffffff},
+	{748,415,0xe60012},
+	{771,444,0xc1c1c2},
+	{770,462,0xc1c1c2},
+	{771,483,0xffffff},
+	{771,496,0xffffff},
+	{771,518,0x37b86e},
+},
+  Run = (function()
+  tap(966,685)
+end)
+},
+
+
 {Name = "3选择账号方式（有快速登陆）",
   Color = {
     {704,305,0x08061e},
@@ -70,31 +86,24 @@ end)
   {696,544,0x8fdaae},
 },
   Run = (function()
-  local acct,passwd = getAcct(_orderid)
-  printFunction(">>>>登陆账号："..acct..":"..passwd)
-  tap(1394,335)
-  tap(1394,335)
-  ss(3*1000)
-  printFunction(">>>>输入账号：")
-
-  inputText(acct); --在输入框中输入字符串"Welcome."并回车
-  ss(5*1000)
-  printFunction(">>>>点标志：")
-  tap(459,139)
-  ss(5*1000)
-  printFunction(">>>>点密码框：")
-  tap(1394,472)
-  tap(1394,472)
-  ss(3*1000)
-  printFunction(">>>>输密码：")
-  inputText(passwd); --在输入框中输入字符串"Welcome."并回车
-  ss(5*1000)
-  printFunction(">>>>点标志：")
-  tap(459,139)
-  ss(5*1000)
-  tap(1043,593)
+		inputAcctMobi()
 end)
 },
+{Name = "5网易邮箱账号登陆(模拟器)",
+  Color = {
+	{702,384,0xffffff},
+	{726,420,0xe60012},
+	{770,402,0xc1c1c2},
+	{770,425,0xc1c1c2},
+	{770,468,0xc1c1c2},
+	{770,505,0xc1c1c2},
+	{770,559,0x8fdaae},
+},
+  Run = (function()
+		inputAcctSim()
+end)
+},
+
 {Name = "6签协议",
   Color = {
     {276,396,0xa7c8ff},
@@ -205,18 +214,17 @@ end)
   tap(1664,75)
 end)
 },
-{Name = "4用户界面",
+{Name = "3用户界面(模拟器)",
   Color = {
-    {1205,87,0xf8f8f8},
-    {1619,56,0x22b260},
-    {282,469,0x19b063},
-    {409,553,0xffffff},
-    {692,483,0x19b063},
-    {643,350,0xffffff},
-  },
+	{33,41,0x191919},
+	{505,61,0xf8f8f8},
+	{1214,48,0xf8f8f8},
+	{1232,176,0xffffff},
+	{1861,46,0x22b260},
+},
   Run = (function()
-  tap(1664,75)
-  return true
+  tap(1830,50)
+	return true
 end)
 },
 sleep = 1000,
