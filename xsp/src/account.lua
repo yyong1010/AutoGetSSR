@@ -73,7 +73,7 @@ function inputAcctSim()
 
 end
 
-setOrderId(2)
+
 _orderid = tonumber(getOrderId()) or 1
 _totalnum = #rFile("[public]account.txt")
 

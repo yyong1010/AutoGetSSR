@@ -23,27 +23,19 @@ function main()
   end
   
   if start == 1 then
-    
+    require "Init"
     require "dogame"
     require "rabbit"
     require "demo"
     require "screen"
     require "tbpara"
     require "account"
+		require "getSSR"
+		require "entergame"
     
-    
-    --dogame()
-    --wFile("givemessr1@163.com----xbox3600\n","[public]account.txt")
-    --wFile("givemessr3@163.com----xbox3600\n","[public]account.txt")
-    
-    while (_orderid < _totalnum + 1) do
-			printFunction("当前序号"..tostring(_orderid).."/".._totalnum)			
-      --_Do(logintb)
-      --dogame()
-      --_Do(changeAccttb)
-      _orderid = _orderid + 1
-      setOrderId(_orderid)
-    end
+		
+		entergame()
+
     
     
     
