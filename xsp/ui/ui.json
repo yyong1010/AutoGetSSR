@@ -6,5 +6,66 @@
 	"cancelname" : "取消",
 	"okname" : "确定",
 	"views" : [
+     {
+         "style" : "default",
+         "text" : "基础设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "align" : "left",
+               "color" : "30,144,255",
+               "size" : 32,
+               "text" : "基础功能选择：",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : 30,
+               "text" : "账号获取方式",
+               "type" : "Label"
+            },
+            {
+               "id" : "getType",
+               "rect" : "440,80,200,60",
+               "list" : "读取下方输入,从文件读取",
+               "select" : "0",
+               "size" : 30,
+               "type" : "ComboBox"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : 30,
+               "text" : "开始序号",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "144,144,144",
+               "id" : "orderid",
+               "prompt" : "输入数字",
+               "size" : 30,
+               "text" : "1",
+               "type" : "Edit"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : 30,
+               "text" : "网易账号",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "144,144,144",
+               "id" : "acct",
+               "prompt" : "格式：账号----密码",
+               "size" : 30,
+               "type" : "Edit"
+            }
+
+         ]
+    }
 	]
 }

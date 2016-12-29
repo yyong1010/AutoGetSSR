@@ -13,15 +13,15 @@ function main()
   require "util"--加载工具
   require "SettingACheck"--加载全局设置
   init("0", 1)--初始化触摸操控脚本
-  
-  
+
+
   start,setting = showUI("ui.json")--显示UI并获取设置
-  
+
   if start == 0 or setting["BasicFunction"] == "" then
     printFunction("取消执行")
     lua_exit()--取消则退出
   end
-  
+
   if start == 1 then
     require "Init"
     require "dogame"
@@ -32,15 +32,16 @@ function main()
     require "account"
 		require "getSSR"
 		require "entergame"
-    
-		
+
+
 		entergame()
 
-    
-    
-    
+
+
+
+
   end
-  
+
 end
 
 -- lua异常捕捉

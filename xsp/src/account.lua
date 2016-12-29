@@ -4,7 +4,7 @@ function getAcct(orderid)
   for k,v in pairs(acctTb) do
     actTb[#actTb+1] = v:split("----")
   end
-  return actTb[orderid][1],actTb[orderid][2]
+  return trim(actTb[orderid][1]),trim(actTb[orderid][2])
 end
 
 function getOrderId()
@@ -76,4 +76,5 @@ end
 
 _orderid = tonumber(getOrderId()) or 1
 _totalnum = #rFile("[public]account.txt")
+printFunction(_orderid)
 

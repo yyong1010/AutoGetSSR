@@ -70,7 +70,7 @@ end)
     {1098,595,0xd1201f},
   },
   Run = (function()
-  tap(1145,582)
+  tap(1180,582)
 end)
 },
 {Name = "5网易邮箱账号登陆",
@@ -261,18 +261,18 @@ getMailtb = {Name = "收信",
     {1744,111,0x733a3a},
   },
   Run = (function()
-  while true do 
+  while true do
     printFunction("检查邮件")
     local x, y = findMultiColorInRegionFuzzy(0xd8c8b7,"5|38|0xd8c8b7,6|9|0xd8c8b7", 95, 718,250,724,288)
     if x ~= -1 and y ~= -1 then
-      printFunction("点邮件收取")	
+      printFunction("点邮件收取")
       tap (x,y)
       ss()
       tap(1262,907)
 			ss(5*1000)
     else
       break
-    end		
+    end
   end
   tap(1761,105)
 end)
@@ -458,7 +458,7 @@ getAchievetb = {Name = "获取成就",
 },
   Run = (function()
 	tap(1822,519)
-  while true do 
+  while true do
     local x, y = findMultiColorInRegionFuzzy(0xf4b25f,"16|11|0xf4b25f", 95, 1582, 224, 1598, 235)
     if x > -1 then
       tap(x,y)

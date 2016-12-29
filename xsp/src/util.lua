@@ -341,3 +341,7 @@ function string:split(sep)
     return fields
 end
 
+function trim(s)
+  return s:match'^%s*(.*%S)' or ''
+end
+
