@@ -24,17 +24,16 @@ function main()
 
   if start == 1 then
     require "Init"
-    require "dogame"
-    require "rabbit"
-    require "demo"
     require "screen"
     require "tbpara"
     require "account"
-		require "getSSR"
+		require "common"
 		require "entergame"
 
 
+		
 		entergame()
+		--_Do(doGametb)
 
 
 

@@ -1,4 +1,4 @@
-local screen = {
+screen = {
   is_colors = function (colortb,vsim)
     local vxp,vyp = colortb[1][1],colortb[1][2]
     local compara = {}

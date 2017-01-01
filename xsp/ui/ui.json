@@ -1,8 +1,8 @@
 {
 	"style" : "default",
 	"config" : "save_AutoGetSSR.dat",
-	"width" : 540,
-	"height" : 960,
+   "height" : 1350,
+   "width" : 1450,
 	"cancelname" : "取消",
 	"okname" : "确定",
 	"views" : [
@@ -20,6 +20,13 @@
             },
             {
                "align" : "left",
+               "color" : "255,0,0",
+               "size" : 32,
+               "text" : "请用海马玩模拟器运行本脚本，设置1080*1920竖屏",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
                "color" : "0,0,0",
                "size" : 30,
                "text" : "账号获取方式",
@@ -27,8 +34,7 @@
             },
             {
                "id" : "getType",
-               "rect" : "440,80,200,60",
-               "list" : "读取下方输入,从文件读取",
+               "list" : "从下方输入读取,从文件读取",
                "select" : "0",
                "size" : 30,
                "type" : "ComboBox"
@@ -66,6 +72,21 @@
             }
 
          ]
-    }
+    },
+		{
+         "style" : "default",
+         "text" : "重要说明",
+         "type" : "Page",
+         "views" : [
+            {
+               "align" : "left",
+               "color" : "30,144,255",
+               "rect" : "40,40,1300,500",
+               "size" : 40,
+							"text" : "1、提供两种方式输入账号，会操作目录权限的可以自行操作，不会的建议直接黏贴账号在脚本输入中,账号密码格式：账号----密码;\n2、存放路径:/data/data/com.xxAssistant/cache/public,账号文件为account.txt，处理序号文件为order.txt;\n3、如果采取从脚本读取，脚本输入框的内容会自动覆盖现有文件内容;\n4、可在任意场景运行脚本，可每天重复登陆自动收邮件，自动抽；\n5、会截图保存抽到的结果，如有SSR文件名会以SSR结尾，保存目录/data/data/com.xxAssistant/cache/；\n6、运行中有问题请加Q群542050185咨询；",
+               "type" : "Label"
+            }
+         ]
+      }
 	]
 }

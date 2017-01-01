@@ -76,5 +76,3 @@ end
 
 _orderid = tonumber(getOrderId()) or 1
 _totalnum = #rFile("[public]account.txt")
-printFunction(_orderid)
-
