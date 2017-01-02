@@ -10,21 +10,24 @@ logintb = {Name = "登入",
       {1292,663,0xbfd4e2},
     },
     Run = (function()
-    tap(1813,177)
+    tap(972,894)
   end)
 },
-{Name = "3用户界面(模拟器)",
+{Name = "2账号登陆界面",
   Color = {
-    {33,41,0x191919},
-    {505,61,0xf8f8f8},
-    {1214,48,0xf8f8f8},
-    {1232,176,0xffffff},
-    {1861,46,0x22b260},
+    {494,360,0xe60012},
+    {501,473,0xe60516},
+    {504,535,0x3d3a39},
+    {727,494,0xffffff},
+    {727,502,0x37b86e},
+    {874,732,0xffffff},
+    {875,741,0x22b260},
   },
   Run = (function()
-  tap(1830,50)
+  tap(966,685)
 end)
 },
+
 {Name = "2账号登陆界面(模拟器)",
   Color = {
     {716,399,0xffffff},
@@ -37,35 +40,6 @@ end)
   },
   Run = (function()
   tap(966,685)
-end),
-layer = {Name = "登入处理",
-  {Name = "2账号登陆界面",
-    Color = {
-      {494,360,0xe60012},
-      {501,473,0xe60516},
-      {504,535,0x3d3a39},
-      {727,494,0xffffff},
-      {727,502,0x37b86e},
-      {874,732,0xffffff},
-      {875,741,0x22b260},
-    },
-    Run = (function()
-    tap(966,685)
-  end)
-},
-
-{Name = "1登入界面",
-  Color = {
-    {359,376,0x831412},
-    {330,444,0xd8e1eb},
-    {601,454,0x131152},
-    {703,568,0xfee5d1},
-    {1247,443,0x6bbdd5},
-    {1237,589,0x5692b7},
-    {1292,663,0xbfd4e2},
-  },
-  Run = (function()
-  tap(972,894)
 end)
 },
 
@@ -177,74 +151,9 @@ end)
   },
   Run = (function()
   tap(987,772)
-  return true
+  --return true
 end)
 },
-{Name = "9庭院界面1",
-  Color = {
-    {419,15,0x432222},
-    {460,15,0x432222},
-    {562,14,0x482525},
-    {632,14,0x9a795b},
-    {1756,46,0xd5c4a2},
-    {1854,46,0xd5c4a2},
-  },
-  Run = (function()
-  return true
-end)
-},
-sleep = 1000,
-csim = 90
-
-}
-},
-{Name = "9庭院界面",
-  Color = {
-    {419,15,0x432222},
-    {460,15,0x432222},
-    {562,14,0x482525},
-    {632,14,0x9a795b},
-    {1756,46,0xd5c4a2},
-    {1854,46,0xd5c4a2},
-  },
-  Run = (function()
-  return true
-end)
-},
-
-{Name = "8场景1",
-  Color ={
-    {47,48,0xd5c4a2},
-    {70,49,0xd5c4a2},
-    {168,49,0xd5c4a2},
-    {174,69,0xd5c4a3},
-    {75,92,0x2c2413},
-    {171,92,0x3c2c13},
-  },
-  Run = (function()
-  return true
-end)
-},
-{Name = "10介绍",
-  Color = {
-    {795,318,0x766e6e},
-    {785,329,0x545454},
-    {950,361,0x3b1219},
-    {1404,515,0xddb961},
-    {1357,571,0x6a5241},
-    {1378,644,0x8d7443},
-    {1378,700,0xdfc795},
-    {1353,747,0x3e2d25},
-  },
-  Run = (function()
-  tap(1127,896)
-end)
-},
-
-sleep = 1000,
-csim = 90
-}
-
 --[[
 {Name = "9庭院界面",
   Color = {
@@ -260,50 +169,51 @@ csim = 90
 end)
 },
 ]]
-gametb = {Name = "游戏处理",
-  {Name = "1狗说话",
-    Color = {
-      {399,13,0x542b2b},
-      {580,9,0x653b3b},
-      {955,531,0x7fd1e2},
-      {954,668,0x4b84ab},
-      {1678,677,0xf7f7e7},
-      {1708,735,0xf2f2e2},
-      {1810,843,0x484344},
-      {1858,845,0x6c2c32},
-    },
-    Run = (function()
-    tap(1127,896)
-  end),
-  layer = {Name = "游戏前期处理",
-    {Name = "2晴说话",
-      Color = {
-        {475,12,0x572e2e},
-        {549,13,0x542b2b},
-        {958,535,0x74bfd7},
-        {952,663,0x4c86a9},
-        {286,829,0x84dee7},
-        {283,933,0x6badc6},
-      },
-      Run = (function()
-      tap(1127,896)
-    end)
+
+{Name = "1狗说话",
+  Color = {
+    {399,13,0x542b2b},
+    {580,9,0x653b3b},
+    {955,531,0x7fd1e2},
+    {954,668,0x4b84ab},
+    {1678,677,0xf7f7e7},
+    {1708,735,0xf2f2e2},
+    {1810,843,0x484344},
+    {1858,845,0x6c2c32},
   },
-  
-  {Name = "3介绍狗",
-    Color = {
-      {1314,312,0xae0302},
-      {1353,359,0xf7f4e6},
-      {1354,407,0xe9deda},
-      {1570,414,0xa06a55},
-      {1626,514,0xcc3848},
-      {1634,615,0xe8e9e6},
-      {1653,692,0x4f0e23},
-      {1458,683,0xc6b1b4},
-    },
-    Run = (function()
-    tap(1127,896)
-  end)
+  Run = (function()
+  tap(1127,896)
+end)
+},
+
+{Name = "2晴说话",
+  Color = {
+    {475,12,0x572e2e},
+    {549,13,0x542b2b},
+    {958,535,0x74bfd7},
+    {952,663,0x4c86a9},
+    {286,829,0x84dee7},
+    {283,933,0x6badc6},
+  },
+  Run = (function()
+  tap(1127,896)
+end)
+},
+
+{Name = "3介绍狗",
+  Color = {
+    {1314,312,0xae0302},
+    {1353,359,0xf7f4e6},
+    {1354,407,0xe9deda},
+    {1570,414,0xa06a55},
+    {1626,514,0xcc3848},
+    {1634,615,0xe8e9e6},
+    {1653,692,0x4f0e23},
+    {1458,683,0xc6b1b4},
+  },
+  Run = (function()
+  tap(1127,896)
+end)
 },
 
 {Name = "4介绍神",
@@ -346,69 +256,40 @@ end)
     {948,641,0x46728b},
   },
   Run = (function()
-  return true
-end)
-},	
-
-sleep = 1000,
-csim = 90
-}
-},
-{Name = "5说话",
-  Color = {
-    {468,11,0x5b3232},
-    {532,8,0x6a4040},
-    {958,527,0x95e7f8},
-    {945,644,0x6ba4c5},
-    {659,812,0x820606},
-    {672,810,0x6f0000},
-  },
-  Run = (function()
-  tap(1286,805)
-end)
-},
-
-{Name = "6庭院有手指1",
-  Color = {
-    {430,9,0x4c2c2c},
-    {559,9,0x4c2c2c},
-    {1748,47,0xa09379},
-    {1860,45,0xa09379},
-    {961,523,0x63a6ad},
-    {948,641,0x46728b},
-  },
-  Run = (function()
   fingerPoint()
 end)
 },
 
-
-{Name = "7标准战斗场景",
+{Name = "7介绍狗",
   Color = {
-    {56,34,0xd5c4a2},
-    {163,33,0xd5c4a2},
-    {272,37,0xd5c4a2},
-    {1911,805,0x423171},
-    {1896,828,0x48376f},
-    {1916,854,0x5c5376},
+    {1439,236,0xf4ba7a},
+    {1713,290,0x476462},
+    {1726,394,0x425b5b},
+    {1706,468,0x51756f},
+    {1187,878,0x0c0c11},
+    {1207,916,0x382d1d},
   },
   Run = (function()
-end),
-layer = {Name= "标准战斗",
-  {Name = "7介绍战斗0",
-    Color = {
-      {1324,416,0xffffff},
-      {1396,513,0xff0000},
-      {1437,483,0xf8f3e0},
-      {1324,632,0xfdfdfe},
-      {1326,599,0xff0000},
-      {1603,512,0xff0000},
-      {1561,582,0xf8f3e0},
-    },
-    Run = (function()
-    tap(1127,896)	
-  end)
+  tap(1127,896)
+end)
 },
+
+{Name = "7介绍战斗0",
+  Color = {
+    {1324,416,0xffffff},
+    {1396,513,0xff0000},
+    {1437,483,0xf8f3e0},
+    {1324,632,0xfdfdfe},
+    {1326,599,0xff0000},
+    {1603,512,0xff0000},
+    {1561,582,0xf8f3e0},
+  },
+  Run = (function()
+  tap(1127,896)
+end)
+},
+
+
 {Name = "7介绍战斗1",
   Color = {
     {939,472,0xffffff},
@@ -456,6 +337,7 @@ end)
   tap(1127,896)
 end)
 },
+
 {Name = "7介绍战斗4",
   Color = {
     {505,754,0xff0000},
@@ -573,8 +455,7 @@ end)
     {1060,899,0x7f0d0e},
   },
   Run = (function()
-  checkGetGiftisOver()
-  return true
+  tap(1127,896)
 end)
 },
 
@@ -602,28 +483,6 @@ end)
 end)
 },
 
-{Name = "10介绍",
-  Color = {
-    {795,318,0x766e6e},
-    {785,329,0x545454},
-    {950,361,0x3b1219},
-    {1404,515,0xddb961},
-    {1357,571,0x6a5241},
-    {1378,644,0x8d7443},
-    {1378,700,0xdfc795},
-    {1353,747,0x3e2d25},
-  },
-  Run = (function()
-  tap(1127,896)
-end)
-},
-sleep = 1000,
-csim = 90
-},
-sleep = 1000,
-csim = 90
-},
-
 
 {Name = "8场景1",
   Color ={
@@ -647,23 +506,23 @@ csim = 90
     tap(xa,ya)
     ss()
   end
-  if (xb ~= -1 and yb ~=-1) then
+    if (xb ~= -1 and yb ~=-1) then
     printFunction("点跳过")
     tap(xb,yb)
     ss()
     
   end
-  if (xc ~= -1 and yc ~=-1) then
+    if (xc ~= -1 and yc ~=-1) then
     printFunction("点大眼睛")
     tap(xc,yc)
     ss()
   end
-  if (xd ~= -1 and yd ~=-1) then
+    if (xd ~= -1 and yd ~=-1) then
     printFunction("点问号")
     tap(xd,yd)
     ss()
   end
-  if xe~= -1 and ye ~=-1 then
+    if xe~= -1 and ye ~=-1 then
     tap(xe,ye)
     printFunction("--点击战斗".."x:"..xf.."y:"..yf)
     ss()
@@ -763,24 +622,25 @@ end)
   },
   Run = (function()
   fingerPoint()
-end),
-layer = {Name = "游戏召唤场景",
-  {Name = "12画符界面",
-    Color = {
-      {557,89,0xc2b8b3},
-      {593,83,0xbeb7ba},
-      {1343,79,0xbfb8bc},
-      {1360,88,0xc5bfc1},
-      {1367,859,0xb6b4b7},
-      {1340,885,0xb6b3b6},
-      {561,887,0xb5b2b5},
-      {599,887,0xb6b3b6},
-    },
-    Run = (function()
-    local xp, yp, dis = waitRandom(_fsh/3-50,_fsh/3+50), waitRandom(_fsw/2-20,_fsw/2+20),waitRandom(_fsh/3.2,_fsh/3.2+150)
-    swip(xp,yp,xp+dis,yp)
-    ss(5*1000)
-  end)
+end)
+},
+
+{Name = "12画符界面",
+  Color = {
+    {557,89,0xc2b8b3},
+    {593,83,0xbeb7ba},
+    {1343,79,0xbfb8bc},
+    {1360,88,0xc5bfc1},
+    {1367,859,0xb6b4b7},
+    {1340,885,0xb6b3b6},
+    {561,887,0xb5b2b5},
+    {599,887,0xb6b3b6},
+  },
+  Run = (function()
+  local xp, yp, dis = waitRandom(_fsh/3-50,_fsh/3+50), waitRandom(_fsw/2-20,_fsw/2+20),waitRandom(_fsh/3.2,_fsh/3.2+150)
+  swip(xp,yp,xp+dis,yp)
+  ss(5*1000)
+end)
 },
 
 {Name = "13抽取结果界面1",
@@ -868,21 +728,7 @@ end)
   tap(764,959)
 end)
 },
-{Name = "10介绍",
-  Color = {
-    {795,318,0x766e6e},
-    {785,329,0x545454},
-    {950,361,0x3b1219},
-    {1404,515,0xddb961},
-    {1357,571,0x6a5241},
-    {1378,644,0x8d7443},
-    {1378,700,0xdfc795},
-    {1353,747,0x3e2d25},
-  },
-  Run = (function()
-  tap(1127,896)
-end)
-},
+
 {Name = "19召唤场景手指5",
   Color = {
     {405,34,0x5f3a1c},
@@ -894,16 +740,8 @@ end)
   },
   Run = (function()
   fingerPoint()
-  return true
 end)
 },
-sleep = 1000,
-csim = 90
-
-}
-},
-
-
 
 {Name = "20取消语音包",
   Color = {
@@ -1016,7 +854,7 @@ end)
   },
   Run = (function()
   tap(1664,75)
-  
+  return true
 end)
 },
 {Name = "3用户界面(模拟器)",
@@ -1029,20 +867,6 @@ end)
   },
   Run = (function()
   tap(1830,50)
-  
-end)
-},
-{Name = "2账号登陆界面(模拟器)",
-  Color = {
-    {716,399,0xffffff},
-    {748,415,0xe60012},
-    {771,444,0xc1c1c2},
-    {770,462,0xc1c1c2},
-    {771,483,0xffffff},
-    {771,496,0xffffff},
-    {771,518,0x37b86e},
-  },
-  Run = (function()
   return true
 end)
 },

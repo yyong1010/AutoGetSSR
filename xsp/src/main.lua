@@ -30,14 +30,7 @@ function main()
 		require "common"
 		require "entergame"
 
-
-		
 		entergame()
-		--_Do(doGametb)
-
-
-
-
 
   end
 

@@ -98,6 +98,7 @@ function _Do(_tab)
       end
       check_table(_tab)
       if _G.DoName then table.insert(DoName,_tab.Name) else _G.DoName = {_tab.Name} end
+			printFunction("_tab.Name".._tab.Name)
       local _now = os.time()
       local _break = false
       local _Repeat = false
@@ -105,7 +106,6 @@ function _Do(_tab)
       if _tab.Begin then _tab.Begin() end
       while true do
         local _States = {}
-
         --寻找满足状态的项
         screen.keep()
         for _key,_value in ipairs(_tab) do
@@ -122,7 +122,7 @@ function _Do(_tab)
           end
         end
         screen.unkeep()
-
+				
         --超时判断
         if #_States == 0 then
           if _tab.timeout then
