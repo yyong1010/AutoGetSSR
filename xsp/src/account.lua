@@ -8,7 +8,11 @@ function getAcct(orderid)
 end
 
 function getOrderId()
-    local tb = rFile("[public]orderid.txt")
+    local st,tb = pcall(rFile,"[public]orderid.txt")
+    if not st then
+      setOrderId(1)
+      return 1
+    end
     return tb[1]
 end
 

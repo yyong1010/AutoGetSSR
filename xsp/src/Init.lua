@@ -4,7 +4,11 @@ taskstatus = createHUD()
 
 if setting["getType"]=="0" then
 wFile(trim(setting["acct"]),"[public]account.txt",'w+')
-wFile(setting["orderid"],"[public]orderid.txt",'w+')
+
+end
+
+if tonumber(setting["orderid"]) > 0 then
+   wFile(setting["orderid"],"[public]orderid.txt",'w+')
 end
 
 
