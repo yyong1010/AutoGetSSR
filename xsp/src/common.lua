@@ -66,3 +66,11 @@ function checkGetGiftisOver()
   end
 end
 
+function recordBlackList()
+	local acct,passwd = getAcct(_orderid)		
+	wFile(acct..":"..passwd.."\n","[public]BlackList.txt",'a')
+	_orderid =_orderid + 1
+	setOrderId(_orderid)
+	showHUD(taskstatus,"当前序号"..tostring(_orderid).."/".._totalnum.." SSR:".._SSRcount,24,"0xffff0000","0xee000000",0,260,1020,400,50)
+end
+

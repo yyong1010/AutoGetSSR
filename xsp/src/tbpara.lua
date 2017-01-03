@@ -177,9 +177,10 @@ end)
   },
   Run = (function()
   tap(987,772)
-  return true
+	return true
 end)
 },
+
 {Name = "9庭院界面1",
   Color = {
     {419,15,0x432222},
@@ -193,6 +194,29 @@ end)
   return true
 end)
 },
+{Name = "11被封号了",
+  Color = {
+	{578,278,0x162838},
+	{686,297,0x1e2126},
+	{719,334,0x6c4b3a},
+	{756,446,0xccb49b},
+	{860,465,0x3d3730},
+	{918,496,0x2c2823},
+	{802,617,0xdd6951},
+	{1133,617,0xf4b25f},
+},
+  Run = (function()
+  closeApp("com.netease.onmyoji")
+	ss(2*1000)
+	runApp("com.netease.onmyoji"); 
+	while (flag ~= 1) do
+		flag = appIsRunning("com.netease.onmyoji");
+	end
+	recordBlackList()
+	return true	
+end)
+},
+
 sleep = 1000,
 csim = 90
 
@@ -212,19 +236,6 @@ csim = 90
 end)
 },
 
-{Name = "8场景1",
-  Color ={
-    {47,48,0xd5c4a2},
-    {70,49,0xd5c4a2},
-    {168,49,0xd5c4a2},
-    {174,69,0xd5c4a3},
-    {75,92,0x2c2413},
-    {171,92,0x3c2c13},
-  },
-  Run = (function()
-  return true
-end)
-},
 {Name = "10介绍",
   Color = {
     {795,318,0x766e6e},
@@ -240,7 +251,26 @@ end)
   tap(1127,896)
 end)
 },
-
+{Name = "11被封号了",
+  Color = {
+	{578,278,0x162838},
+	{686,297,0x1e2126},
+	{719,334,0x6c4b3a},
+	{756,446,0xccb49b},
+	{860,465,0x3d3730},
+	{918,496,0x2c2823},
+	{802,617,0xdd6951},
+	{1133,617,0xf4b25f},
+},
+  Run = (function()
+  closeApp("com.netease.onmyoji")
+	ss(2*1000)
+	runApp("com.netease.onmyoji"); 
+	while (flag ~= 1) do
+		flag = appIsRunning("com.netease.onmyoji");
+	end	
+end)
+},
 sleep = 1000,
 csim = 90
 }
