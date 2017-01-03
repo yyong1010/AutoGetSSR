@@ -206,12 +206,6 @@ end)
 	{1133,617,0xf4b25f},
 },
   Run = (function()
-  closeApp("com.netease.onmyoji")
-	ss(2*1000)
-	runApp("com.netease.onmyoji"); 
-	while (flag ~= 1) do
-		flag = appIsRunning("com.netease.onmyoji");
-	end
 	recordBlackList()
 	return true	
 end)
@@ -263,13 +257,8 @@ end)
 	{1133,617,0xf4b25f},
 },
   Run = (function()
-  closeApp("com.netease.onmyoji")
-	ss(2*1000)
-	runApp("com.netease.onmyoji"); 
-	while (flag ~= 1) do
-		flag = appIsRunning("com.netease.onmyoji");
-	end	
-end)
+	recordBlackList()
+	end)
 },
 sleep = 1000,
 csim = 90
