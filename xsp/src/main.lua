@@ -25,10 +25,18 @@ function main()
   if start == 1 then
     require "Init"
     require "screen"
-    require "tbpara"
+
     require "account"
 		require "common"
 		require "entergame"
+    require "commonpara"
+
+    if setting["DeviceType"] == "0" then
+      require "tbpara"
+    else
+      require "tbmobipara"
+    end
+    printTable(setting)
 
 		entergame()
 
